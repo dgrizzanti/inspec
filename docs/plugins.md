@@ -18,11 +18,11 @@ Currently, each plugin can offer one or more of these capabilities:
 
  * define a new command-line-interface (CLI) command suite
  * connectivity to new types of hosts or cloud providers (`train` plugins)
+ * DSL extensions at the file, control, or test level
 
 Future work might include new capability types, such as:
 
  * reporters (output generators)
- * DSL extensions at the file, control, or test level
  * attribute fetchers to allow reading InSpec attributes from new sources (for example, a remote, encrypted key-value store)
 
 ## How do I find out which plugins are available?
@@ -30,7 +30,7 @@ Future work might include new capability types, such as:
 The InSpec CLI can tell you which plugins are available:
 
 ```bash
-$ inspec plugin search
+$ inspec plugin search inspec-
 ```
 
 ## How do I install and manage plugins?
